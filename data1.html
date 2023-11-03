@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-image: url(back\ 2.png);
+            background-size: cover;
+        }
+
+        .location-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 65px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        button,
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #1583ea;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #1583ea;
+            color: white;
+            cursor: pointer;
+            width: 115px;
+            border-radius: 25px;
+            transition: .2s;
+        }
+
+        button[type="submit"]:hover {
+            color: #070808;
+            transition: .3s;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <form class="location-form">
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <!-- Add options for countries -->
+                <option value="country1">India</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <!-- Add options for states based on the selected country -->
+                <!-- For example, you can use JavaScript to populate the options dynamically -->
+                <option value="state1">Tamilnadu</option>    
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="district">District:</label>
+            <select id="district" name="district">
+                <!-- Add options for districts based on the selected state -->
+                <!-- For example, you can use JavaScript to populate the options dynamically -->
+                <option value="district1">Chennai</option>
+                <option value="district2">Coimbatore</option>
+                <option value="district3">Thiruvannamalai</option>
+                <option value="district4">Krishnagiri</option>
+                <option value="district5">Madurai</option>
+                <option value="district6">Trichy</option>
+                <option value="district7">Thanjavur</option>
+                <option value="district8">Salem</option>
+                <option value="district9">Tirunelveli</option>
+                <option value="district10">Erode</option>
+                <option value="district11">Tiruppur</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <!-- Add options for cities based on the selected district -->
+                <!-- For example, you can use JavaScript to populate the options dynamically -->
+                <option value="city1">Gandhipuram</option>
+                <option value="city2">Ukkadam</option>
+                <option value="city3">R.S.Puram</option>
+                <option value="city4">Pollachi</option>
+                <option value="city5">Kinnathukadavu</option>
+                <option value="city6">Kondampatti</option>
+                <option value="city7">Vadavalli</option>
+                <option value="city8">Sulur</option>
+                <option value="city9">Singanallur</option>
+                <option value="city10">Perur</option>
+                <option value="city11">Kovaipudur</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <button type="submit"><a href="http://127.0.0.1:5000">Dataset</a></button>
+        </div>
+        <div class="form-group">
+            <button type="submit"><a href="https://login.sendpulse.com/emailservice/send-sms/">Deliver SMS</a></button>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AquaNotify</title>
+        <link rel="stylesheet" href="C:\Users\EK\Documents\ELITE SLAYERS\style1.css">
+        
+    </head>
+    <body>
+        <img src="C:\Users\EK\Documents\ELITE SLAYERS\pic.jpg" alt="Image" class="left-align">
+        <header>
+            <div class="hero">
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Administrator">Administrator</a></li>
+                        <li><a href="#NextGenX">NextGenX</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="#Insight-Quest">Insight-Quest</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <section id="Administrator">
+                <div class="container">
+                    <form id="loginForm">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <button type="submit"><a href="file:///C:/Users/EK/Documents/ELITE%20SLAYERS/data1.html?country=country1&state=state1&district=district1&city=city1&taluk=">Login</a></button>
+                    </form>
+                </div>
+        </section>
+
+
+        <section id="NextGenX">
+            <div class="nextgen">
+                <img src="C:\Users\EK\Documents\ELITE SLAYERS\1.jpg" width="1345px"  height="700px">
+            </div>
+        </section>
+
+
+        <section id="About">
+            <div class="us">
+                <img src="C:\Users\EK\Documents\ELITE SLAYERS\about.jpg" width="1345px" height="700px">
+            </div>
+        </section>
+
+
+        <section id="Contact">
+            <div class="Contact">
+                <form action="https://formspree.io/f/myyqzgvd" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Email id" required>
+                    <input type="text" name="phone" placeholder="Phone no." required>
+                    <textarea name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                    <div class="copy">
+                        <button type="submit" name="submit">Send</button>
+                    </div>     
+                </form>
+            </div>
+        </section>
+
+
+        <section id="Insight-Quest">
+            <div class="addd">
+                <img src="C:\Users\EK\Documents\ELITE SLAYERS\survey.png" width="1345px"  height="700px">
+            </div>
+        </section>
+
+
+        <script type="text/javascript" src="C:\Users\EK\Documents\ELITE SLAYERS\new script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const loginForm = document.getElementById('loginForm');
+    
+                loginForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+    
+                    const email = document.getElementById('email').value;
+                    const password = document.getElementById('password').value;
+    
+                    // In a real application, you would validate the email and password against your database.
+                    // For this example, let's assume valid credentials are "test@example.com" and "password123".
+    
+                    if (email === 'eliteslayers2023@gmail.com' && password === 'Eliteslayers@4') {
+                        alert('Login successful!');
+                        // You can redirect the user to a new page here.
+                    } else {
+                        alert('Invalid email or password. Please try again.');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
